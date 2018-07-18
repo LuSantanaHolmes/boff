@@ -25,50 +25,54 @@
 
   <!-- navigation bar and dropdown Links -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <!-- menu/links -->
+      <ul class="navbar-nav">
 
-    <!-- menu/links -->
-    <ul class="navbar-nav">
+        <!-- home link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
 
-      <!-- home link -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">HOME</a>
-      </li>
+        <!-- films link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">FILMS</a>
+        </li>
 
-      <!-- films link -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">FILMS</a>
-      </li>
+        <!-- about link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
 
-      <!-- about link -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
-      </li>
+        <!-- contact link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
 
-      <!-- contact link -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
-      </li>
-
-      <!-- dropdown nav item title -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          USEFUL LINKS
-        </a>
-        <!-- dropdown menu -->
-        <div class="dropdown-menu">
-          <!-- link 1 -->
-          <a class="dropdown-item" href="#">Link 1</a>
-          <!-- link 2 -->
-          <a class="dropdown-item" href="#">Link 2</a>
-          <!-- link 3 -->
-          <a class="dropdown-item" href="#">Link 3</a>
-        </div> <!-- div dropdown-menu -->
-      </li>
-    </ul>
+        <!-- dropdown nav item title -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            USEFUL LINKS
+          </a>
+          <!-- dropdown menu -->
+          <div class="dropdown-menu">
+            <!-- link 1 -->
+            <a class="dropdown-item" href="#">Link 1</a>
+            <!-- link 2 -->
+            <a class="dropdown-item" href="#">Link 2</a>
+            <!-- link 3 -->
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div> <!-- div dropdown-menu -->
+        </li>
+      </ul>
+    </div> <!-- closing navbar-collapse -->
   </nav> <!-- closing navbar -->
 
   <!-- div news article -->
-  <div class="col-sm-8">
+  <div class="col-lg">
     <h2>NEWS</h2>
     <!-- first news article -->
     <h3>TITLE HEADING</h3>
@@ -104,7 +108,91 @@
     </p>
   </div>
 
-  
+  <!-- div news article -->
+  <div class="col-lg">
+    <h2>ABOUT US</h2>
+    <!-- first news article -->
+    <h3>TITLE HEADING</h3>
+    <h5>Title description, Dec 7, 2017</h5>
+    <!-- first aricle pic -->
+    <div class="fakeimg">Fake Image</div>
+    <!-- pic text -->
+    <p>
+      Some text..
+    </p>
+    <p>
+      Sunt in culpa qui officia deserunt mollit anim id est laborum
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco.
+    </p>
+  </div>
+
+
+  <!-- film table -->
+  <div class="container-fluid bg-grey">
+    <h2>Basic Table</h2>
+    <p>
+      The .table class adds basic styling (light padding and horizontal dividers) to a table:
+    </p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-left">CONTACT</h2>
+    <div class="row">
+      <!-- <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div> -->
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
