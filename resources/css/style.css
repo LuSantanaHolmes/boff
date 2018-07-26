@@ -1,5 +1,29 @@
 .fakeimg {
       height: 200px;
       width: 200px;
-      background: #aaa;
-  }
+      background: 033D4Daa;
+}
+
+@font-face {
+   font-family: karlgeoffnatural;
+   src: url("../../resources/fonts/karlgeoffnatural.ttf");
+ }
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #05354F;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+.jumbotron {
+    background-image: url("../../resources/images/city.png");
+    background-size: cover;
+    color: #ffffff;
+}
+
+.jumbotron h1 h2 {
+  font-family: karlgeoffnatural;
+}
