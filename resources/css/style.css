@@ -35,6 +35,8 @@ body {
     margin: auto;
 }
 
+
+
 #main-page-title {
     /* font-family: karlgeoffnatural; */
     font-family: sukima;
@@ -55,8 +57,10 @@ body {
 }
 
 .container-fluid {
-  padding-top: 20px;
-  padding: 100px 80px;
+  /* padding-top: 20px;
+  padding: 100px; */
+  padding: 60px 50px;
+
 }
 
 #news, #film {
@@ -79,7 +83,7 @@ img {
 }
 
 .article p {
-  overflow: auto;
+  overflow:visible;
   padding-left: none;
   padding-bottom: 50px;
 
@@ -96,53 +100,70 @@ thead{
   font-weight: bolder;
 }
 
-.film-table
-{
+.film-table{
   font-weight: bold;
   color: #033D4D;
 }
 
 .googlemap {
-        position: relative;
-        padding-bottom: 30%; /* 4:3 ratio*/
-        height: 0;
-        overflow: hidden;
+  position: relative;
+  padding-bottom: 30%; /* 4:3 ratio*/
+  height: 0;
+  overflow: hidden;
 }
 
 .googlemap iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  border-radius: 50%;
+.email{
+  color: #f2f2f2;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
   text-align: center;
-  text-decoration: none;
-  margin: 50px 100px;
-  border:2px solid #f2f2f2;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
 }
 
-.fa:hover {
-    opacity: 0.7;
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
 }
 
-.fa-twitter {
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
   background: #55ACEE;
   color: white;
 }
 
-.fa-instagram {
-  background: #125688;
+.instagram {
+  background: #dd4b39;
   color: white;
 }
 
-.fa-facebook {
-  background: #3B5998;
+.youtube {
+  background: #bb0000;
   color: white;
 }

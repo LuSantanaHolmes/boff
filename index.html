@@ -20,6 +20,10 @@
   <!-- Add social media icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <!-- JavaScript for popover -->
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
 
@@ -28,7 +32,7 @@
 
 </head>
 
- <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="520">
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="30">
 
   <!-- navigation bar and dropdown Links -->
   <nav class="navbar fixed-top navbar-expand-sm  navbar-dark">
@@ -75,8 +79,6 @@
             <a class="dropdown-item" href="http://brooklyn.news12.com/">Brooklyn News 12</a>
             <!-- link 2 -->
             <a class="dropdown-item" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park</a>
-            <!-- link 3 -->
-            <!-- <a class="dropdown-item" href="#">Link 3</a> -->
 
           </div> <!-- div dropdown-menu -->
 
@@ -99,7 +101,7 @@
     <form>
 
       <div class="input-group">
-        <input type="email" class="form-control" size="50" placeholder="SIGN UP WITH YOUR EMAIL AND RECEIVE OUR FREE NEWSLETTER" required>
+        <input id="newsletter" type="email" class="form-control" size="50" placeholder="SIGN UP WITH YOUR EMAIL AND RECEIVE OUR FREE NEWSLETTER" required>
         <div class="input-group-btn">
           <button type="button" class="btn">Subscribe</button>
 
@@ -392,7 +394,7 @@
          <br>
          <p> <i class="fas fa-map-marker-alt"></i> Brooklyn, NY, US</p>
          <p> <i class="fas fa-phone-square"></i> +00 1515151515</p>
-         <p><a href="mailto:info@boff.com">info@boff.com</a></p>
+         <p><i class="fas fa-envelope"></i> <a class="email" href="mailto:info@boff.com">info@boff.com</a></p>
         </div>
 
        <div class="col-sm-7">
@@ -408,18 +410,22 @@
          <div class="row">
            <div class="col-sm-12 form-group">
              <button class="btn btn-default pull-right" type="submit">Send</button>
-           </div>
-         </div>
-       </div>
-      </div>
-      </div>
-      <div class="row justify-content-center">
-        <!-- social media icons -->
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-facebook"></a>
-      </div>
-    </div>
+           </div> <!-- row contact form button -->
+         </div> <!-- row contact form button -->
+       </div> <!-- contact form -->
+     </div> <!-- row -->
+    </div> <!-- container fluid for contact -->
+    </div> <!-- Jumbotron -->
+
+
+
+<!-- sticky social media icon bar -->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
 
 
 
