@@ -55,13 +55,13 @@ body {
 }
 
 .container-fluid {
-  padding-top: none;
-  padding: 60px 50px;
+  padding-top: 20px;
+  padding: 100px 80px;
 }
 
 #news, #film {
   background-color: #5F97A7;
-  border-color: #f2f2f2; 
+  border-color: #f2f2f2;
 }
 
 #about-us, #ticket{
@@ -75,6 +75,7 @@ img {
       clear:right;
       padding-left:15px;
       padding-bottom: 10px;
+      border-radius: 15px 50px;
 }
 
 .article p {
@@ -99,4 +100,49 @@ thead{
 {
   font-weight: bold;
   color: #033D4D;
+}
+
+.googlemap {
+        position: relative;
+        padding-bottom: 30%; /* 4:3 ratio*/
+        height: 0;
+        overflow: hidden;
+}
+
+.googlemap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 50px 100px;
+  border:2px solid #f2f2f2;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
