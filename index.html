@@ -10,8 +10,12 @@
 
   <!-- css stylesheet -->
   <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+
   <!-- Google API Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat" rel="stylesheet">
+
+  <!-- fontawesome API -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <!-- JavaScript for popover -->
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
@@ -65,11 +69,11 @@
           <!-- dropdown menu -->
           <div class="dropdown-menu">
             <!-- link 1 -->
-            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="http://brooklyn.news12.com/">Brooklyn News 12</a>
             <!-- link 2 -->
-            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park</a>
             <!-- link 3 -->
-            <a class="dropdown-item" href="#">Link 3</a>
+            <!-- <a class="dropdown-item" href="#">Link 3</a> -->
 
           </div> <!-- div dropdown-menu -->
 
@@ -110,36 +114,50 @@
 
 
   <!-- div news article -->
-  <div id="news" class="container-fluid">
-    <h1 class="art-title">NEWS</h1>
+  <div id="news" class="container-fluid articel">
 
-    <!-- first news article -->
-    <h3>FILMS & DATES CONFIRMED</h3>
-    <h5>July 7, 2018</h5>
+    <!-- first article -->
+    <div class="article">
 
-    <!-- first aricle pic -->
-    <div class="fakeimg">Fake Image</div>
+      <h1 class="art-title">NEWS</h1>
 
-    <!-- pic text -->
-    <p>
-      The dates and films for the Film Festival have been confired go check them
-      out and get your free tickets.Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-      in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+      <!-- first news article -->
+      <h3><b>
+         FILMS & DATES CONFIRMED</b></h3>
+      <h5>July 7, 2018</h5>
 
-    <br>
+      <!-- first aricle pic -->
+      <div>
+        <img src="resources/images/film_festival_parc.png" alt="film_festival_parc">
+      </div>
 
-    <!-- second article -->
-    <h3>FREE FILM FESTIVAL</h3>
+      <!-- pic text -->
+      <p>
+        The dates and films for the Film Festival have been confired go check them
+        out and get your free tickets.Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+        in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+  </div> <!-- div first article-->
+
+  <br>
+  <br>
+
+
+  <!-- second article -->
+  <div class="article">
+
+    <h3><b>FREE FILM FESTIVAL</b></h3>
     <h5>May 2, 2018</h5>
 
     <!-- second article pic -->
-    <div class="fakeimg">Fake Image</div>
+    <div>
+      <img src="resources/images/coupon.png" alt="coupon">
+    </div>
 
     <!-- pic text -->
     <p>
@@ -153,17 +171,22 @@
       fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
       in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-  </div>
+  </div> <!-- closing second article -->
+
+</div> <!-- closing news container-->
+
+
+
+
 
   <!-- about us -->
   <div id="about-us" class="container-fluid">
     <h1 class="art-title">ABOUT THE FESTIVAL</h1>
 
-    <!-- first news article -->
-    <!-- <h3>TITLE HEADING</h3> -->
 
-    <!-- first aricle pic -->
-    <div class="fakeimg">Fake Image</div>
+
+    <!-- aricle pic -->
+    <div >Fake Image</div>
     <!-- pic text -->
     <p>
       The Brookly Outdoor Film Festival is a free festival that was created and pulled
@@ -193,10 +216,10 @@
       <!-- tiles-form -->
       <thead>
         <tr>
-          <th>FILM</th>
-          <th>DATE</th>
-          <th>TIME</th>
-          <th>TICKETS</th>
+          <th><b>FILM</b></th>
+          <th><b>DATE</b></th>
+          <th><b>TIME</b></th>
+          <th><b>TICKETS</b></th>
         </tr>
       </thead>
 
@@ -205,7 +228,7 @@
 
         <!-- row one form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">The Shawshank Redemption</a></td>
+          <td> <a class="film-table" href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">The Shawshank Redemption</a></td>
           <td>5th August</td>
           <td>15:00</td>
           <td>Ticket</td>
@@ -213,7 +236,7 @@
 
         <!-- row two form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">The Godfather</a></td>
+          <td> <a class="film-table" href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">The Godfather</a></td>
           <td>5th August</td>
           <td>18:00</td>
           <td>Ticket</td>
@@ -221,7 +244,7 @@
 
         <!-- row three form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">The Dark Knight</a></td>
+          <td> <a class="film-table" href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">The Dark Knight</a></td>
           <td>6th August</td>
           <td>15:00</td>
           <td>Ticket</td>
@@ -229,15 +252,15 @@
 
         <!-- row four form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Pulp Fiction</a></td>
-          <td>6th August</td>
+          <td> <a class="film-table" href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Pulp Fiction</a></td>
+          <td >6th August</td>
           <td>18:00</td>
           <td>Ticket</td>
         </tr>
 
         <!-- row five form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Forest Gump</a></td>
+          <td> <a class="film-table" href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Forest Gump</a></td>
           <td>7th August</td>
           <td>15:00</td>
           <td>Ticket</td>
@@ -245,7 +268,7 @@
 
         <!-- row six form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt">Inception</a></td>
+          <td> <a class="film-table" href="https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt">Inception</a></td>
           <td>7th August</td>
           <td>18:00</td>
           <td>Ticket</td>
@@ -253,16 +276,16 @@
 
         <!-- row seven form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0133093/?ref_=adv_li_tt">The Matrix</a></td>
-          <td>7th August</td>
+          <td><a class="film-table" href="https://www.imdb.com/title/tt0133093/?ref_=adv_li_tt">The Matrix</a></td>
+          <td>8th August</td>
           <td>15:00</td>
           <td>Ticket</td>
         </tr>
 
         <!-- row eight form -->
         <tr>
-          <td><a href="https://www.imdb.com/title/tt0120689/?ref_=fn_al_tt_1">The Green Mile</a></td>
-          <td>7th August</td>
+          <td><a class="film-table" href="https://www.imdb.com/title/tt0120689/?ref_=fn_al_tt_1">The Green Mile</a></td>
+          <td>8th August</td>
           <td>18:00</td>
           <td>Ticket</td>
         </tr>
@@ -349,13 +372,13 @@
 
 
     <!-- footer -->
-<div class="jumbotron">
+<div id="contact" class="jumbotron">
   <div class="container-fluid bg-grey">
 <h2 class="text-center">CONTACT</h2>
 <div class="row">
  <div class="col-sm-5">
    <p>Contact us and we'll get back to you within 24 hours.</p>
-   <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+   <p><span class="map-marker-alt"></span> Chicago, US</p>
    <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
  </div>
