@@ -4,10 +4,20 @@
       background: 033D4Daa;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #f2f2f2;
+}
+
 @font-face {
    font-family: karlgeoffnatural;
    src: url("../../resources/fonts/karlgeoffnatural.ttf");
+
+   font-family: sukima;
+   src: url("../../resources/fonts/Sukima_stencil_bold.otf");
  }
+
+
 
 .navbar {
     margin-bottom: 0;
@@ -25,8 +35,12 @@
     padding: 100px 25px;
 }
 
-.jumbotron h1 h2 {
-    font-family: karlgeoffnatural;
+#main-page-title {
+    /* font-family: karlgeoffnatural; */
+    font-family: sukima;
+    font-size: 100px;
+    font-variant: small-caps;
+    /* font-weight: lighter; */
 }
 
 #read-more-btn{
@@ -34,6 +48,27 @@
     margin-bottom: 25px;
 }
 
+.btn {
+  background-color: #033D4D;
+  color: #ffffff;
+}
+
 .container-fluid {
-    padding: 60px 50px;
+  padding-top: none;
+  padding: 60px 50px;
+}
+
+#news, #film{
+  background-color: #5F97A7;
+}
+
+#about-us, #ticket{
+  background-color: #3A7A8C;
+}
+
+
+.art-title{
+  font-family: 'Bungee Inline', cursive;
+  padding-bottom: 20px;
+  font-size: 60px;
 }

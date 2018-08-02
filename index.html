@@ -10,6 +10,9 @@
 
   <!-- css stylesheet -->
   <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+  <!-- Google API Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat" rel="stylesheet">
+
   <!-- JavaScript for popover -->
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
 
@@ -77,13 +80,13 @@
 
   <!-- Jumbotron titlel logo -->
   <div class="jumbotron jumbotron-fluid text-center">
-    <h1>Brooklyn Outdoor Film Festival</h1>
+    <h1 id="main-page-title">Brooklyn Outdoor Film Festival</h1>
     <h2>
       FREE FILM FESTIVAL IN NEW YORK!
     </h2>
 
     <!-- read more button -->
-    <a id="read-more-btn" href="#about-us" class="btn btn-info" role="button">Read More</a>
+    <a id="read-more-btn" href="#about-us" class="btn" role="button">Read More</a>
 
     <!-- subscribe field  -->
     <form>
@@ -91,7 +94,7 @@
       <div class="input-group">
         <input type="email" class="form-control" size="50" placeholder="SIGN UP WITH YOUR EMAIL AND RECEIVE OUR FREE NEWSLETTER" required>
         <div class="input-group-btn">
-          <button type="button" class="btn btn-danger">Subscribe</button>
+          <button type="button" class="btn">Subscribe</button>
 
 
           <!-- <p>
@@ -108,7 +111,7 @@
 
   <!-- div news article -->
   <div id="news" class="container-fluid">
-    <h1>NEWS</h1>
+    <h1 class="art-title">NEWS</h1>
 
     <!-- first news article -->
     <h3>FILMS & DATES CONFIRMED</h3>
@@ -154,7 +157,7 @@
 
   <!-- about us -->
   <div id="about-us" class="container-fluid">
-    <h1>ABOUT THE FESTIVAL</h1>
+    <h1 class="art-title">ABOUT THE FESTIVAL</h1>
 
     <!-- first news article -->
     <!-- <h3>TITLE HEADING</h3> -->
@@ -175,11 +178,11 @@
     </p>
   </div> <!-- closing about us div -->
 
-  <hr>
+
 
   <!-- film table -->
   <div id="film" class="container-fluid">
-    <h1>FILMS</h1>
+    <h1 class="art-title">FILMS</h1>
     <p>
       Here are the films that we will be showing as this years film festival.
     </p>
@@ -268,11 +271,11 @@
     </table> <!-- closing table -->
   </div> <!-- closing film table div -->
 
-  <hr>
+
 
   <!-- ticket sign up form -->
   <div id="ticket" class="container-fluid">
-    <h1>TICKETS</h1>
+    <h1 class="art-title">TICKETS</h1>
     <P>
       SIGN UP FOR FREE TICKETS
     </P>
@@ -328,63 +331,55 @@
     </form> <!-- closing form tag -->
   </div>
 
-  <hr>
 
 
 
-
-
-
-
-
-
-
-
-  <!-- contact form -->
-  <!-- <div id="contact"  class="container-fluid"> -->
-
-    <!-- contact form title -->
-    <!-- <h1 class="text-left">CONTACT</h1> -->
-
-    <!-- contact form rows -->
-    <!-- <div class="row">
-      <div class="col-sm-6 form-group">
-        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-      </div>
-      <div class="col-sm-6 form-group">
-        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-      </div>
-    </div> -->
-
-    <!-- contact form comments -->
-    <!-- <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br> -->
-
-    <!-- contact form button -->
-    <!-- <div class="row">
-      <div class="col-sm-12 form-group">
-        <button class="btn btn-default pull-right" type="submit">Send</button>
-      </div>
-    </div>
-
-  </div> <!-- closing contact form -->
-
+  <!-- Add Google Maps -->
+  <div id="googleMap" style="height:400px;width:100%;"></div>
+  <script>
+  function myMap() {
+  var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 
     <!-- footer -->
-  <div class="container-fluid">
-    <div class="jumbotron">
+<div class="jumbotron">
+  <div class="container-fluid bg-grey">
+<h2 class="text-center">CONTACT</h2>
+<div class="row">
+ <div class="col-sm-5">
+   <p>Contact us and we'll get back to you within 24 hours.</p>
+   <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+   <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+   <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+ </div>
+ <div class="col-sm-7">
+   <div class="row">
+     <div class="col-sm-6 form-group">
+       <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+     </div>
+     <div class="col-sm-6 form-group">
+       <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+     </div>
+   </div>
+   <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+   <div class="row">
+     <div class="col-sm-12 form-group">
+       <button class="btn btn-default pull-right" type="submit">Send</button>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+   </div>
+</div>
 
-      <!-- contact form title -->
-      <h5>CONTACT</h5>
-
-    <!-- contact details written -->
-    <div class="col-3">
-      <div class="row">
-          <p> Brooklyn,NY, US</p>
-          <p> +00 1515151515</p>
-          <p> info@boff.com</p>
-       </div>
-  </div>
 
 
 
