@@ -4,6 +4,8 @@ body {
   color: #f2f2f2;
 }
 
+/* Font for main jumbotron  */
+
 @font-face {
    font-family: karlgeoffnatural;
    src: url("../../resources/fonts/karlgeoffnatural.ttf");
@@ -15,14 +17,16 @@ body {
 
 
 .navbar {
-    /* margin-bottom: 0; */
+    margin-bottom: 0;
     background-color: #05354F;
-    /* border: 0; */
+    border: 5px;
     font-size: 11px !important;
     letter-spacing: 4px;
     opacity:0.9;
 }
 
+
+/* main title jumbotron */
 .jumbotron {
     background-image: url("../../resources/images/city.png");
     background-size: cover;
@@ -57,6 +61,7 @@ body {
 
 #news, #film {
   background-color: #5F97A7;
+  border-color: #f2f2f2; 
 }
 
 #about-us, #ticket{
@@ -80,15 +85,18 @@ img {
 }
 
 
-
 .art-title{
   font-family: 'Bungee Inline', cursive;
   padding-bottom: 20px;
   font-size: 60px;
 }
 
+thead{
+  font-weight: bolder;
+}
 
 .film-table
 {
+  font-weight: bold;
   color: #033D4D;
 }
