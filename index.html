@@ -20,10 +20,6 @@
   <!-- Add social media icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Load font awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
   <!-- JavaScript for popover -->
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
 
@@ -32,7 +28,7 @@
 
 </head>
 
- <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="30">
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- navigation bar and dropdown Links -->
   <nav class="navbar fixed-top navbar-expand-sm  navbar-dark">
@@ -63,6 +59,11 @@
           <a class="nav-link" href="#ticket">TICKETS</a>
         </li>
 
+        <!-- location link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#location">LOCATION</a>
+        </li>
+
         <!-- contact link -->
         <li class="nav-item">
           <a class="nav-link" href="#contact">CONTACT</a>
@@ -87,6 +88,14 @@
     </div> <!-- closing navbar-collapse -->
   </nav> <!-- closing navbar -->
 
+  <!-- sticky social media icon bar -->
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/" class="facebook" target="_blank" ><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/" class="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/" class="instagram" target="_blank" ><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/" class="youtube" target="_blank" ><i class="fa fa-youtube"></i></a>
+  </div>
+
   <!-- Jumbotron titlel logo -->
   <div class="jumbotron jumbotron-fluid text-center">
     <h1 id="main-page-title">Brooklyn Outdoor Film Festival</h1>
@@ -100,8 +109,8 @@
     <!-- subscribe field  -->
     <form>
 
-      <div class="input-group">
-        <input id="newsletter" type="email" class="form-control" size="50" placeholder="SIGN UP WITH YOUR EMAIL AND RECEIVE OUR FREE NEWSLETTER" required>
+      <div class="input-group justify-content-center">
+        <input type="email" class="form-control" size="20" placeholder="Email Address" required>
         <div class="input-group-btn">
           <button type="button" class="btn">Subscribe</button>
 
@@ -362,27 +371,11 @@
   </div>
 
 
-
-
-  <!-- Add Google Maps -->
-  <!-- <div id="googleMap" style="height:400px;width:100%;"></div>
-  <script>
-  function myMap() {
-  var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-  }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
- -->
-
- <!-- <div class="googlemap   container-fluid">
+ <div id="location" class="googlemap   container-fluid">
     <div class="map-responsive">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.805037053481!2d-73.99889354899513!3d40.70029127923181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sfr!2sus!4v1533231950458" width="600" height="300" frameborder="0" style="border:0 padding:0px" allowfullscreen></iframe>
 </div>
-</div> -->
+</div>
 
       <!-- footer -->
     <div id="contact" class="jumbotron">
@@ -419,13 +412,7 @@
 
 
 
-<!-- sticky social media icon bar -->
-<div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-</div>
+
 
 
 
