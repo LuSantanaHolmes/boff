@@ -145,7 +145,8 @@ thead{
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-  background-color: white;
+  /* background-color: white; */
+  opacity: 0.3;
 }
 
 .facebook {
