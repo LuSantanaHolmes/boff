@@ -1,25 +1,21 @@
 
-body {
-  /* font-family: 'Montserrat', sans-serif;
-  color: #f2f2f2; */
-}
-
 /* Font for main jumbotron  */
 
-@font-face {
-   font-family: karlgeoffnatural;
-   src: url("../../resources/fonts/karlgeoffnatural.ttf");
+.jumbotron{
+    height: 100vh;
+}
 
-   /* font-family: sukima;
-   src: url("../../resources/fonts/Sukima_stencil_bold.otf"); */
+@font-face {
+   font-family: sukima;
+   src: url("../../resources/fonts/Sukima_stencil_bold.otf");
  }
 
 
 
 .navbar {
-    margin-bottom: 0;
-    background-color: #05354F;
-    border: 5px;
+    /* margin-bottom: 0; */
+    /* background-color: #d6200e; */
+    /* border: 5px; */
     font-size: 11px !important;
     letter-spacing: 4px;
     opacity:0.9;
@@ -30,46 +26,46 @@ body {
 .jumbotron {
     background-image: url("../../resources/images/city.png");
     background-size: cover;
-    color: #ffffff;
-    padding: 100px 25px;
-    margin: auto;
+    /* color: #ffffff; */
+    /* padding: 100px 25px; */
+    /* margin: auto; */
 }
 
 
 
-#main-page-title {
+.fontsukima {
     /* font-family: karlgeoffnatural; */
-    font-family: sukima;
-    font-size: 100px;
-    font-variant: small-caps;
+    font-family: sukima !important;
+    /* font-size: 100px; */
+    /* font-variant: small-caps; */
     /* font-weight: lighter; */
 }
 
 #read-more-btn{
-    margin: 10px;
-    margin-bottom: 25px;
+    /* margin: 10px;
+    margin-bottom: 25px; */
 }
 
 .btn {
-  background-color: #033D4D;
-  color: #ffffff;
-  border-color: #ffffff;
+  /* background-color: #033D4D; */
+  /* color: #ffffff; */
+  /* border-color: #ffffff; */
 }
 
 .container-fluid {
   /* padding-top: 20px;
-  padding: 100px; */
-  padding: 60px 50px;
+  padding: 100px;
+  padding: 60px 50px; */
 
 }
 
 #news, #film {
-  background-color: #5F97A7;
-  border-color: #f2f2f2;
+  /* background-color: #5F97A7; */
+  /* border-color: #f2f2f2; */
 }
 
 #about-us, #ticket{
-  background-color: #3A7A8C;
+  /* background-color: #3A7A8C; */
 }
 
 img {
@@ -82,18 +78,18 @@ img {
       border-radius: 15px 50px;
 }
 
-.article p {
+/* .article p {
   overflow:visible;
   padding-left: none;
   padding-bottom: 50px;
 
-}
+} */
 
 
 .art-title{
-  font-family: 'Bungee Inline', cursive;
-  padding-bottom: 20px;
-  font-size: 60px;
+  /* font-family: 'Bungee Inline', cursive; */
+  /* padding-bottom: 20px;
+  font-size: 60px; */
 }
 
 thead{
@@ -127,7 +123,7 @@ thead{
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 20%;
+  top: 25%;
   -webkit-transform: translateY(-20%);
   -ms-transform: translateY(-20%);
   transform: translateY(-20%);
@@ -137,7 +133,7 @@ thead{
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   transition: all 0.3s ease;
   color: white;
   font-size: 10px;

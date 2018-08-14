@@ -14,22 +14,26 @@ $body-color: #f2f2f2;
 
 // Changing the border radius of buttons
 // $border-radius: 15px;
+// Nav bar font sizes
+$navbar-brand-font-size: 50px
+
 
 // Changing the theme colors
 $primary: #5F97A7;
 $secondary: #3A7A8C;
 $info: #033D4D;
 $dark: #0f1319;
+$light:#f2f2f2;
 
 // Changing display-1 size
-$display1-size: 100px;
+// $display1-size: 100px;
 
 // Changing font
-// $font-family-sans-serif: "Montserrat", sans-serif ;
+$font-family-sans-serif: "Montserrat", sans-serif ;
 $font-family-base: "Montserrat", sans-serif ;
 $headings-font-family: "Bungee Inline", cursive ;
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
 $theme-colors: (
- "tertiary": #033D4D , "test": #ff00fc, "alien": #42fe00
+ "tertiary": #033D4D , "textwhite": #f2f2f2, "alien": #42fe00
 );
