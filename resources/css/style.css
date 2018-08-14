@@ -1,16 +1,21 @@
-
-/* Font for main jumbotron  */
-
+/* full page jumbotron */
 .min-100 {
     min-height: 100vh;
 }
 
+/* Font for main jumbotron  */
 @font-face {
    font-family: sukima;
    src: url("../../resources/fonts/Sukima_stencil_bold.otf");
  }
 
-
+ .fontsukima {
+     /* font-family: karlgeoffnatural; */
+     font-family: sukima !important;
+     /* font-size: 100px; */
+     /* font-variant: small-caps; */
+     /* font-weight: lighter; */
+ }
 
 .navbar {
     /* margin-bottom: 0; */
@@ -33,13 +38,7 @@
 
 
 
-.fontsukima {
-    /* font-family: karlgeoffnatural; */
-    font-family: sukima !important;
-    /* font-size: 100px; */
-    /* font-variant: small-caps; */
-    /* font-weight: lighter; */
-}
+
 
 #read-more-btn{
     /* margin: 10px;
@@ -69,21 +68,21 @@
 }
 
 img {
-      height: 200px;
+      /* height: 200px;
       width: auto;
       float: right;
-      clear:right;
-      padding-left:15px;
-      padding-bottom: 10px;
+      clear:right; */
+      /* padding-left:15px;
+      padding-bottom: 10px; */
       border-radius: 15px 50px;
 }
 
-/* .article p {
-  overflow:visible;
+.article p {
+  /* overflow:visible;
   padding-left: none;
-  padding-bottom: 50px;
+  padding-bottom: 50px; */
 
-} */
+}
 
 
 .art-title{
@@ -93,31 +92,31 @@ img {
 }
 
 thead{
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 .film-table{
-  font-weight: bold;
-  color: #033D4D;
+  /* font-weight: bold; */
+  /* color: #033D4D; */
 }
 
 .googlemap {
-  position: relative;
-  padding-bottom: 30%; /* 4:3 ratio*/
+  /* position: relative;
+  padding-bottom: 30%;
   height: 0;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .googlemap iframe {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100% !important;
-  height: 100% !important;
+  height: 100% !important; */
 }
 
 .email{
-  color: #f2f2f2;
+  /* color: #f2f2f2; */
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */

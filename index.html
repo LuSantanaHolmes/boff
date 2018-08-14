@@ -25,7 +25,7 @@
 
 </head>
 
- <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="70">
 
 
 
@@ -35,17 +35,6 @@
     <a href="https://twitter.com/" class="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
     <a href="https://www.instagram.com/" class="instagram" target="_blank" ><i class="fa fa-instagram"></i></a>
     <a href="https://www.youtube.com/" class="youtube" target="_blank" ><i class="fa fa-youtube"></i></a>
-  </div>
-
-  <!-- Jumbotron  -->
-  <div class="jumbotron m-0 d-flex align-items-center flex-column justify-content-center min-100">
-      <h1 class="display-1 text-justify-center">Brooklyn Outdoor </h1>
-      <h1 class="display-1 text-justify-center">Film Festival </h1>
-      <p class=" display-4 fontsukima"> FREE FILM FESTIVAL IN NEW YORK! </p>
-      <p class="lead">
-        <!-- read more button -->
-        <a id="read-more-btn" href="#about-us" class="btn bg-tertiary border-light text-light my-3" role="button">Read More</a>
-      </p>
   </div>
 
   <!-- navigation bar and dropdown Links -->
@@ -59,12 +48,12 @@
 
         <!-- home link -->
         <li class="nav-item">
-          <a class="nav-link" href="#news">NEWS</a>
+          <a class="nav-link" href="#about-us">ABOUT US</a>
         </li>
 
         <!-- about us link -->
         <li class="nav-item">
-          <a class="nav-link" href="#about-us">ABOUT US</a>
+          <a class="nav-link" href="#news">NEWS</a>
         </li>
 
         <!-- film link -->
@@ -106,9 +95,40 @@
     </div> <!-- closing navbar-collapse -->
   </nav> <!-- closing navbar -->
 
+  <!-- Jumbotron  -->
+  <div class="jumbotron jumbotron-fluid m-0 d-flex align-items-center flex-column justify-content-center min-100">
+      <h1 class="display-1 text-justify-center">Brooklyn Outdoor </h1>
+      <h1 class="display-1 text-justify-center">Film Festival </h1>
+      <p class=" display-4 fontsukima"> FREE FILM FESTIVAL IN NEW YORK! </p>
+      <p class="lead">
+        <!-- read more button -->
+        <a id="read-more-btn" href="#about-us" class="btn bg-tertiary border-light text-light my-3" role="button">Read More</a>
+      </p>
+  </div>
+
+  <!-- About us -->
+  <div id="about-us" class="container-fluid bg-primary py-3 ">
+    <h1 class="display-3 ml-4 my-3">ABOUT THE FESTIVAL</h1>
+
+    <!-- About us article-->
+    <div class="media ml-4 my-3">
+      <img class="d-flex mr-4" data-src="holder.js/64x64?theme=sky" alt="movie" src="resources/images/movie.png"   data-holder-rendered="true" style="width: 200px; height: 200px;">
+      <div class="media-body">
+        The Brookly Outdoor Film Festival is a free festival that was created and pulled
+        together by film lovers for film lovers. We carefully selected some of the best
+        films for your to enjoy. The festival will be held in the Brookly Bridge Park
+        and can hold up to 5000 people. Take a look at the films we have chosen for this
+        years festival and order your free ticket.
+        Sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco.
+      </div> <!-- media body -->
+    </div> <!-- media -->
+  </div> <!-- container  -->
 
   <!-- div news article -->
-  <div id="news" class="container-fluid bg-primary py-3">
+  <div id="news" class="container-fluid bg-secondary py-3">
     <h1 class="display-3 ml-4 my-3">NEWS</h1>
 
     <!-- first news article -->
@@ -129,7 +149,7 @@
       <img class="d-flex ml-4" alt="film_festival_parc" src="resources/images/film_festival_parc.png" data-holder-rendered="true"   style="width: 200px; height: 200px;">
     </div> <!-- media -->
 
-<hr class="bg-light my-3">
+<hr class="bg-light ml-4 my-3">
 
   <!-- second article -->
 
@@ -152,39 +172,19 @@
   </div> <!-- container -->
 
 
-  <!-- About us -->
-  <div id="about-us" class="container-fluid bg-secondary py-3 ">
-    <h1 class="art-title display-3 ml-4 mt-3">ABOUT THE FESTIVAL</h1>
-
-    <!-- first news article -->
-    <div class="media ml-4 mt-3">
-      <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" alt="movie" src="resources/images/movie.png"   data-holder-rendered="true" style="width: 200px; height: 200px;">
-      <div class="media-body">
-        The dates and films for the Film Festival have been confired go check them
-        out and get your free tickets.Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum.
-      </div> <!-- media body -->
-    </div> <!-- media -->
-  </div> <!-- container  -->
-
 
   <!-- film table -->
-  <div id="film" class="container-fluid bg-primary">
-    <h1 class="art-title">FILMS</h1>
-    <p>
+  <div id="film" class="container-fluid bg-primary py-3">
+    <h1 class="display-3 ml-4 my-3">FILMS</h1>
+    <p class="ml-4">
       Here are the films that we will be showing as this years film festival.
     </p>
 
     <!-- table -->
-    <table class="table table-hover">
+    <table class="table table-hover ml-4">
 
       <!-- tiles-form -->
-      <thead>
+      <thead class="font-weight-bold">
         <tr>
           <th><b>FILM</b></th>
           <th><b>DATE</b></th>
@@ -198,66 +198,66 @@
 
         <!-- row one form -->
         <tr>
-          <td> <a class="film-table" href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">The Shawshank Redemption</a></td>
+          <td> <a class="text-tertiary" href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">The Shawshank Redemption</a></td>
           <td>5th August</td>
           <td>15:00</td>
-          <td> <a class="film-table" href="#ticket">Tickets</a> </td>
+          <td> <a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row two form -->
         <tr>
-          <td> <a class="film-table" href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">The Godfather</a></td>
+          <td> <a class="text-tertiary" href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">The Godfather</a></td>
           <td>5th August</td>
           <td>18:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row three form -->
         <tr>
-          <td> <a class="film-table" href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">The Dark Knight</a></td>
+          <td> <a class="text-tertiary" href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">The Dark Knight</a></td>
           <td>6th August</td>
           <td>15:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row four form -->
         <tr>
-          <td> <a class="film-table" href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Pulp Fiction</a></td>
+          <td> <a class="text-tertiary" href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Pulp Fiction</a></td>
           <td >6th August</td>
           <td>18:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row five form -->
         <tr>
-          <td> <a class="film-table" href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Forest Gump</a></td>
+          <td> <a class="text-tertiary" href="https://www.imdb.com/title/tt0110912/?ref_=adv_li_tt">Forest Gump</a></td>
           <td>7th August</td>
           <td>15:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row six form -->
         <tr>
-          <td> <a class="film-table" href="https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt">Inception</a></td>
+          <td> <a class="text-tertiary" href="https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt">Inception</a></td>
           <td>7th August</td>
           <td>18:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row seven form -->
         <tr>
-          <td><a class="film-table" href="https://www.imdb.com/title/tt0133093/?ref_=adv_li_tt">The Matrix</a></td>
+          <td><a class="text-tertiary" href="https://www.imdb.com/title/tt0133093/?ref_=adv_li_tt">The Matrix</a></td>
           <td>8th August</td>
           <td>15:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
         <!-- row eight form -->
         <tr>
-          <td><a class="film-table" href="https://www.imdb.com/title/tt0120689/?ref_=fn_al_tt_1">The Green Mile</a></td>
+          <td><a class="text-tertiary" href="https://www.imdb.com/title/tt0120689/?ref_=fn_al_tt_1">The Green Mile</a></td>
           <td>8th August</td>
           <td>18:00</td>
-          <td><a class="film-table" href="#ticket">Tickets</a> </td>
+          <td><a class="text-tertiary" href="#ticket">Tickets</a> </td>
         </tr>
 
       </tbody> <!-- input form -->
@@ -267,14 +267,14 @@
 
 
   <!-- ticket sign up form -->
-  <div id="ticket" class="container-fluid bg-secondary">
-    <h1 class="art-title">TICKETS</h1>
-    <P>
+  <div id="ticket" class="container-fluid bg-secondary py-3">
+    <h1 class="display-3 ml-4 my-3">TICKETS</h1>
+    <P class="ml-4">
       Sign up for free tickets.
     </P>
 
     <!-- form  -->
-    <form>
+    <form class="ml-4">
 
       <!-- name -->
       <div class="form-group">
@@ -300,46 +300,34 @@
         </select>
       </div>
 
-      <!-- sumbit buton -->
-      <!-- <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a> -->
-      <!-- <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a> -->
-      <!-- <div class="container">
-        <h3>Popover Example</h3>
-        <a href="#ticket" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
-
-        <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();
-        });
-        </script> -->
-
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn bg-tertiary border-light text-light">Submit</button>
 
     </form> <!-- closing form tag -->
   </div>
 
   <!-- googe maps -->
-   <div id="location" class="googlemap   container-fluid">
-      <div class="map-responsive">
+   <div id="location" class="googlemap container-fluid bg-primary py-3">
+     <h1 class="display-3 ml-4 my-3"> Location </h1>
+      <div class="ml-4 map-responsive">
   <!-- pulled from google maps, original link, style in css -->
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.805037053481!2d-73.99889354899513!3d40.70029127923181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sfr!2sus!4v1533231950458" width="600" height="300" frameborder="0" style="border:0 padding:0px" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.805037053481!2d-73.99889354899513!3d40.70029127923181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sfr!2sus!4v1533231950458" width="1350" height="300" frameborder="0" style="border:0 padding:0px"></iframe>
   </div>
   </div>
 
       <!-- footer -->
-    <div id="contact" class="jumbotron">
+    <div id="contact" class="jumbotron jumbotron-fluid m-0">
       <div class="container-fluid bg-grey">
-        <h2 class="text-center">CONTACT</h2>
       <div class="row">
         <div class="col-sm-5">
-         <h6><b>Contact us and we'll get back to you within 24 hours.</b></h6>
+         <h6 class="font-weight-bold mt-5 ml-4" >Contact us and we'll get back to you within 24 hours</h6>
          <br>
-         <p> <i class="fas fa-map-marker-alt"></i> Brooklyn, NY, US</p>
-         <p> <i class="fas fa-phone-square"></i> +00 1515151515</p>
-         <p><i class="fas fa-envelope"></i> <a class="email" href="mailto:info@boff.com">info@boff.com</a></p>
+         <p class="font-weight-bold ml-4 mt-4"> <i class="fas fa-map-marker-alt"></i> Brooklyn, NY, US</p>
+         <p class="font-weight-bold ml-4"> <i class="fas fa-phone-square"></i> +00 1515151515</p>
+         <p class="font-weight-bold ml-4"><i class="fas fa-envelope"></i> <a class="text-primary email" href="mailto:info@boff.com">info@boff.com</a></p>
         </div>
 
        <div class="col-sm-7">
+         <h2 class="display-4">CONTACT</h2>
          <div class="row">
            <div class="col-sm-6 form-group">
              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -351,25 +339,13 @@
          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
          <div class="row">
            <div class="col-sm-12 form-group">
-             <button class="btn btn-default pull-right" type="submit">Send</button>
+             <button class="btn bg-tertiary border-light text-light" type="submit">Send</button>
            </div> <!-- row contact form button -->
          </div> <!-- row contact form button -->
        </div> <!-- contact form -->
      </div> <!-- row -->
     </div> <!-- container fluid for contact -->
     </div> <!-- Jumbotron -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <!-- Optional JavaScript -->
