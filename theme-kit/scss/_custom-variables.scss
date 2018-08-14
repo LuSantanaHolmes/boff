@@ -25,17 +25,9 @@ $dark: #0f1319;
 $display1-size: 100px;
 
 // Changing font
-$font-family-sans-serif: "Montserrat", sans-serif, "Bungee Inline", cursive ;
-// $font-family-monospace: "Bungee Inline";
-
-// Changing border color NOT NEEDED???
-// $table-border-color:#ffffff ;
-
-
-
-
-
-
+// $font-family-sans-serif: "Montserrat", sans-serif ;
+$font-family-base: "Montserrat", sans-serif ;
+$headings-font-family: "Bungee Inline", cursive ;
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
 $theme-colors: (
