@@ -141,7 +141,7 @@ thead{
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 50%;
+  top: 80%;
   -webkit-transform: translateY(-20%);
   -ms-transform: translateY(-20%);
   transform: translateY(-20%);
@@ -178,10 +178,10 @@ thead{
   /* text-align: center; */
   color: white;
   /* font-size: 220px; */
-  vertical-align: middle;
+  /* vertical-align: middle; */
   background: #d6249f;
   /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  /* box-shadow: 0px 3px 10px rgba(0,0,0,.25); */
 }
 
 .youtube {
