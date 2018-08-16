@@ -25,26 +25,17 @@
 
 </head>
 
- <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="70">
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-
-  <!-- sticky social media icon bar -->
-  <div class="icon-bar">
-    <a href="https://www.facebook.com/" class="facebook" target="_blank" ><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/" class="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
-    <a href="https://www.instagram.com/" class="instagram" target="_blank" ><i class="fa fa-instagram"></i></a>
-    <a href="https://www.youtube.com/" class="youtube" target="_blank" ><i class="fa fa-youtube"></i></a>
-  </div>
 
   <!-- navigation bar and dropdown Links -->
-  <nav class="navbar fixed-top navbar-expand-sm  bg-tertiary">
+  <nav class="navbar fixed-top navbar-expand-sm  navbar-dark bg-tertiary">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <!-- menu/links -->
-      <ul class="nav navbar-nav navbar-right justify-content-end">
+      <ul class="navbar-nav">
 
         <!-- home link -->
         <li class="nav-item">
@@ -95,6 +86,15 @@
     </div> <!-- closing navbar-collapse -->
   </nav> <!-- closing navbar -->
 
+
+  <!-- sticky social media icon bar -->
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/" class="facebook" target="_blank" ><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/" class="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/" class="instagram" target="_blank" ><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/" class="youtube" target="_blank" ><i class="fa fa-youtube"></i></a>
+  </div>
+
   <!-- Jumbotron  -->
   <div class="jumbotron jumbotron-fluid m-0 d-flex align-items-center flex-column justify-content-center min-100">
       <h1 class="display-1 text-justify-center">Brooklyn Outdoor </h1>
@@ -103,17 +103,17 @@
       <p class="lead">
         <!-- read more button -->
         <a id="read-more-btn" href="#about-us" class="btn bg-tertiary border-light text-light my-3" role="button">Read More</a>
+
       </p>
   </div>
 
-  <!-- About us -->
   <div id="about-us" class="container-fluid bg-primary py-3 ">
     <h1 class="display-3 ml-4 my-3">ABOUT THE FESTIVAL</h1>
-
-    <!-- About us article-->
-    <div class="media ml-4 my-3">
-      <img class="d-flex mr-4" data-src="holder.js/64x64?theme=sky" alt="movie" src="resources/images/movie.png"   data-holder-rendered="true" style="width: 200px; height: 200px;">
-      <div class="media-body">
+    <div class=" d-flex flex-row">
+      <div class="col ml-3">
+        <img class="" alt="movie" src="resources/images/movie.png" style="width: 200px; height: 200px;">
+      </div>
+      <div class="col-10">
         The Brookly Outdoor Film Festival is a free festival that was created and pulled
         together by film lovers for film lovers. We carefully selected some of the best
         films for your to enjoy. The festival will be held in the Brookly Bridge Park
@@ -123,9 +123,12 @@
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco.
-      </div> <!-- media body -->
-    </div> <!-- media -->
-  </div> <!-- container  -->
+      </div>
+  </div>
+</div>
+
+
+
 
   <!-- div news article -->
   <div id="news" class="container-fluid bg-secondary py-3">
@@ -149,10 +152,9 @@
       <img class="d-flex ml-4" alt="film_festival_parc" src="resources/images/film_festival_parc.png" data-holder-rendered="true"   style="width: 200px; height: 200px;">
     </div> <!-- media -->
 
-<hr class="bg-light ml-4 my-3">
+    <hr class="bg-light ml-4 my-3">
 
   <!-- second article -->
-
     <div class="media ml-4 my-3">
       <div class="media-body">
         <h3 class="mt-0 mb-1">FREE FILM FESTIVAL</h3>
@@ -310,7 +312,7 @@
      <h1 class="display-3 ml-4 my-3"> Location </h1>
       <div class="ml-4 map-responsive">
   <!-- pulled from google maps, original link, style in css -->
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.805037053481!2d-73.99889354899513!3d40.70029127923181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sfr!2sus!4v1533231950458" width="1350" height="300" frameborder="0" style="border:0 padding:0px"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.805037053481!2d-73.99889354899513!3d40.70029127923181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sfr!2sus!4v1533231950458" width="420" height="300" frameborder="0" style="border:0 padding:0px"></iframe>
   </div>
   </div>
 
